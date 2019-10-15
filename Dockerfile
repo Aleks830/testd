@@ -8,5 +8,5 @@
  #COPY default /etc/nginx/sites-enabled/
  #COPY supervisord.conf /etc/supervisord.conf
  #CMD supervisord -n -c /etc/supervisord.conf
- #ENTRYPOINT ["nginx", "-g", "daemon off;"]
+ ENTRYPOINT ["nginx", "-g", "daemon off;"]
  EXPOSE 80:80
